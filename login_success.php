@@ -6,7 +6,7 @@ session_start();
 
 // cek apakah user telah login, jika belum login maka di alihkan ke halaman login
 if($_SESSION['status'] !="login"){
-	header("Location:index.php");
+	//header("Location:index.php");
 }
 
 if($_SESSION['role']==1){
