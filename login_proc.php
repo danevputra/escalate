@@ -16,7 +16,7 @@ if(isset($_POST["masuk"]))
 						session_start();
 						$_SESSION['username'] = $username;
 						$_SESSION['status'] = "login";
-						$_SESSION['id_user'] = $id;
+						$_SESSION['id_user'] = $row['id_user'];
 						$_SESSION['role'] = $row['role'];
 						header("Location:login_success.php");  
                      }  
