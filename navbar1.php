@@ -3,7 +3,7 @@
 <br/>-->
 
 <body>
-<nav class="navbar navbar-expand-sm bg-primary">
+<nav class="navbar navbar-expand bg-primary">
     <a class="navbar-brand" href="#">
         <img src="view/img/logo.png" width="30" height="30" alt="">
         <span style="color:white;">Escalate</span>
