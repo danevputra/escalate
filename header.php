@@ -18,4 +18,6 @@
   <!-- Custom styles for this template-->
   <link href="view/css/sb-admin-2.css" rel="stylesheet">
 
+  <script type="text/javascript" src="bootstrap.js"> </script> 
+
 </head>

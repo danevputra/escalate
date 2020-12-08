@@ -12,7 +12,8 @@ if($_SESSION['status'] !="login"){
 if($_SESSION['role']==1){
 // menampilkan pesan selamat datang
 include 'header.php';
-echo "<div align='right'>". $_SESSION['username']."</div>";
+include 'navbar_login.php';
+//echo "<div align='right'>". $_SESSION['username']."</div>";
 
 $id = $_SESSION['id_user'];
 $sql = "SELECT * FROM package WHERE id_user=$id";
@@ -21,25 +22,19 @@ $install = mysqli_fetch_array($query);
 if($install!=NULL){
 	$sts = $install['install_sts'];
 	if($sts==0){
-		echo "<p>Instalasi akan segera kami lakukan dalam 3 hari kedepan, mohon menunggu.</p>";
+		echo "<br/><p>Instalasi akan segera kami lakukan dalam 3 hari kedepan, mohon menunggu.</p>";
 	}
 	else {
-		echo "<p>Produk anda telah terpasang, apabila anda mengalami kendala, silakan hubungi kami </p>";
+		echo "<br/><p>Produk anda telah terpasang, apabila anda mengalami kendala, silakan hubungi kami </p>";
 	}
 }
 else{
-	echo "<p>Ayo beli produk kami sekarang!</p>";
+	echo "<br/><p>Ayo beli produk kami sekarang!</p>";
 	include 'cont1.php';
-	echo "<br/><br/>";
+	echo "<br/>";
 }
 ?>
-<a href="hub.php">UMKM Hub</a>
-<br/>
-<br/>
-<a href=#>Hubungi Kami</a>
-<br/>
-<br/>
-<a href="logout.php">logout</a>
+<a href="service_desk.php">Hubungi Kami</a>
 <?php
 include 'footer.php';
 }

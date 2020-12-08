@@ -1,7 +1,3 @@
-<!--<a href="login.php">Login</a>
-<a href="signup.php">Sign Up</a>
-<br/>-->
-
 <body>
 <nav class="navbar navbar-expand bg-primary">
     <a class="navbar-brand" href="#">
