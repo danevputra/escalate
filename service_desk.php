@@ -3,18 +3,38 @@ session_start();
 if (!isset($_SESSION['username'])){
 	header("Location:login.php");
 }
+include ('header.php');
+include ('navbar_login.php');
 ?>
-
-<html>
-    <head>
+        <script src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script>
+      function countChar(val) {
+        var len = val.value.length;
+        if (len >= 500) {
+          val.value = val.value.substring(0, 500);
+        } else {
+          $('#charNum').text(500 - len);
+        }
+      };
+    </script>
         <title>Service Desk</title>
     </head>
     <body>
-        <div>Sevice Desk (max.500 characters)</div>
+    <br/>
+    <div class="container">
+        <div class="jumbotron">
+        <h3 class="display-5 text-center">Sevice Desk</h3>
+        <hr class="my-4">
         <form action="service_proc.php" method="POST">
-            <textarea name="keluhan"></textarea>
+            <textarea name="keluhan" class="form-control" onkeyup="countChar(this)"></textarea>
+            <div id="charNum"></div>
             <br/>
-            <input type="submit" id="service" name="service" value="kirimkan">
+            <div class="text-center">
+            <input type="submit" id="service" name="service" value="Kirimkan" class="btn-sm btn-primary">
+            </div>
         </form>
-    </body>
-</html>
+        </div>
+    </div>    
+<?php 
+    include ('footer.php');
+?>

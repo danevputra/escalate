@@ -17,7 +17,7 @@
 
   <!-- Custom styles for this template-->
   <link href="view/css/sb-admin-2.css" rel="stylesheet">
+  <link href="view/css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
   <script type="text/javascript" src="bootstrap.js"> </script> 
-
-</head>

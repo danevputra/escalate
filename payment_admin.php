@@ -5,20 +5,26 @@ session_start();
 if($_SESSION['status'] !="login"){
 	header("Location:index.php");
 }
+include 'header.php';
+include 'navbar_login_admin.php';
 ?>
 
-<b>Halaman Konfirmasi Pembayaran</b>
+<br/>
+<div class = "page-header">
+<h5 class="text-center font-weight-bold">Halaman Konfirmasi Pembayaran</h5>
+</div>
 
-<table border="1px" id="tabel">
+<div class="container table-responsive"> 
+<table class="table table-striped table-sm" id="tabel">
 <thead>
     <tr>
-        <th>id_transaksi</th>
-        <th>username</th>
-        <th>nama UMKM</th>
-        <th>nama bidang UMKM</th>
-        <th>nama paket</th>
-        <th>bukti pembayaran</th>
-        <th>konfirmasi pembayaran</th>
+        <th scope="col">id_transaksi</th>
+        <th scope="col">username</th>
+        <th scope="col">nama UMKM</th>
+        <th scope="col">Bidang UMKM</th>
+        <th scope="col">nama paket</th>
+        <th scope="col">bukti pembayaran</th>
+        <th scope="col">konfirmasi pembayaran</th>
     </tr>
 </thead>
 <tbody>
@@ -30,13 +36,13 @@ while($pay = mysqli_fetch_array($query)){
     echo "<form action='konfirmasi_payment.php' method='post'>";
     echo "<tr>";
 
-    echo "<td><input type='hidden' name='id_transaksi' value='".$pay['id_transaksi']."'>".$pay['id_transaksi']."</td>";
+    echo "<td scope='row'><input type='hidden' name='id_transaksi' value='".$pay['id_transaksi']."'>".$pay['id_transaksi']."</td>";
     echo "<td>".$pay['username']."</td>";
     echo "<td>".$pay['nama_umkm']."</td>";
     echo "<td>".$pay['nm_bidang']."</td>";
     echo "<td>".$pay['nm_pack']."</td>";
     echo "<td><a href='bukti/".$pay['bukti']."'target='blank'>".$pay['bukti']."</td>";
-    echo "<td><button class='konfirmasi' type=submit name='konfirmasi'> Konfirmasi </button></td>";
+    echo "<td><button class='btn btn-primary btn-sm' type='submit' name='konfirmasi'> Konfirmasi </button></td>";
 
     echo "</tr>";
     echo "</form>";
@@ -44,3 +50,4 @@ while($pay = mysqli_fetch_array($query)){
 ?>
 </tbody>
 </table>
+</div>
