@@ -30,21 +30,26 @@ if($install!=NULL){
 	$sts = $install['install_sts'];
 	if($sts_pay == 0){
 		include "view2/body_user1.php";
+		include "news.php";
 	} 
 	else if ($sts_pay==1&&$sts==0) {
 		include "view2/body_user2.php";
+		include "news.php";
 	}
 	else if($sts_pay==1&&$sts==1){
 		include "view2/body_user3.php";
+		include "news.php";
 	}
 }
 else{
-	include 'cont1.php';
+	include "carrousel.php";
+	include "pricing.php";
+	include "news.php";
 }
 ?>
 
 <?php
-include 'view2/footer.php';
+include 'view2/footer2.php';
 }
 ?>
 

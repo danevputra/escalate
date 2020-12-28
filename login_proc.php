@@ -22,19 +22,29 @@ if(isset($_POST["masuk"]))
                      }  
                      else  
                      {  
-						  //return false;
-						  echo '<script>alert("Wrong User Details")</script>';  
-						  //header("Location:login.php");
+						  echo '
+                                   <script>
+                                   window.alert("Gagal Login");
+                                   window.location.href = "login.php";
+                                   </script>';
                      }  
                 }  
 		   }
 		   else  
 			{  
-				echo '<script>alert("Wrong User Details")</script>';  
+				echo '
+                    <script>
+                    window.alert("Gagal Login");
+                    window.location.href = "login.php";
+                    </script>';  
 			}      
 }
 else  
 {  
-	echo '<script>alert("Wrong User Details")</script>';  
+	echo '
+     <script>
+     window.alert("Gagal Login");
+     window.location.href = "login.php";
+     </script>';  
 }   
  ?>
