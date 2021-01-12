@@ -11,7 +11,7 @@
             
             
             
-                <li class="sidebar-item active ">
+                <li class="sidebar-item">
                     <a href="login_success.php" class='sidebar-link'>
                         <i data-feather="home" width="20"></i> 
                         <span>Dashboard</span>

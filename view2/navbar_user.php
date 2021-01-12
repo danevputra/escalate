@@ -12,7 +12,7 @@ include 'config.php';
                     <ul class="navbar-nav d-flex align-items-center navbar-light ml-auto">
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                                <div class="d-none d-md-block d-lg-inline-block">Hi, <?php echo $_SESSION['username'];?></div>
+                                <div class="d-lg-inline-block">Hi, <?php echo $_SESSION['username'];?></div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <a class="dropdown-item" href="logout.php"><i data-feather="log-out"></i> Logout</a>
