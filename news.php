@@ -8,7 +8,7 @@
 <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img src="view2/assets/images/samples/inspirational-aerial-landscape-autumn-forest-and-FU2LKHA.jpg" class="card-img-top img-fluid"
+                        <img src="view2/assets/images/samples/1.jpg" class="card-img-top img-fluid"
                             alt="singleminded">
                         <div class="card-body">
                             <h5 class="card-title">Cek Penerima BLT dan Cara pencairannya</h5>
@@ -24,7 +24,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img src="view2/assets/images/samples/inspirational-aerial-landscape-autumn-forest-and-FU2LKHA.jpg" class="card-img-top img-fluid"
+                        <img src="view2/assets/images/samples/2.jpg" class="card-img-top img-fluid"
                             alt="singleminded">
                         <div class="card-body">
                             <h5 class="card-title">BLT UMKM Diperpanjang hingga 2021</h5>
@@ -40,7 +40,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img src="view2/assets/images/samples/inspirational-aerial-landscape-autumn-forest-and-FU2LKHA.jpg" class="card-img-top img-fluid"
+                        <img src="view2/assets/images/samples/4.jpg" class="card-img-top img-fluid"
                             alt="singleminded">
                         <div class="card-body">
                             <h5 class="card-title">Cek BLT BSU Cair di Bulan Desember</h5>
@@ -56,7 +56,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img src="view2/assets/images/samples/inspirational-aerial-landscape-autumn-forest-and-FU2LKHA.jpg" class="card-img-top img-fluid"
+                        <img src="view2/assets/images/samples/3.jpg" class="card-img-top img-fluid"
                             alt="singleminded">
                         <div class="card-body">
                             <h5 class="card-title">Banpres UMKM Banyak Cair di Bank BNI</h5>

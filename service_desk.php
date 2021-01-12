@@ -53,6 +53,8 @@ include 'view2/navbar_user.php';
                     <div class="card-body">
                         <div class="form-group mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Silakan Tulis Keluhan Anda (maks.500 karakter)</label>
+                            <br/>
+                            <label for="exampleFormControlTextarea1" class="form-label" style="color:red">Hanya dapat digunakan apabila anda telah membeli produk kami.</label>
                             <form action="service_proc.php" method="POST">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="keluhan" class="form-control" onkeyup="countChar(this)"></textarea>
                             <br/>
@@ -67,6 +69,8 @@ include 'view2/navbar_user.php';
                             <br/>
                             <input type="submit" id="service" name="service" value="Kirimkan" class="btn btn-primary">
                             </form>
+                            <br/>
+                            
                         </div>
                     </div>
                 </div>

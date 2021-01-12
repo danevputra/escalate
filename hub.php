@@ -51,22 +51,6 @@ include 'view2/navbar_user.php';
     </tr>
 </thead>
 <tbody>
-<?php
-include ("config.php");
-
-$sql = "SELECT * FROM user INNER JOIN bidang ON user.bidang=bidang.id_bidang AND role=1";
-$query = mysqli_query($db, $sql);
-
-while($umkm = mysqli_fetch_array($query)){
-    echo "<tr>";
-
-    echo "<td scope='row'>".$umkm['nama_umkm']."</td>";
-    echo "<td>".$umkm['nm_bidang']."</td>";
-    echo "<td>".$umkm['alamat']."</td>";
-
-    echo "</tr>";
-}
-?>
 </tbody>
 </table>
 </div>
